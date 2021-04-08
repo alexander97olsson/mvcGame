@@ -13,6 +13,8 @@ use function Mos\Functions\{
     url
 };
 
+use alos17\Dice\Game;
+
 /**
  * Class Router.
  */
@@ -56,8 +58,29 @@ class Router
             $body = renderView("layout/page.php", $data);
             sendResponse($body);
             return;
+        } else if ($method === "GET" && $path === "/dicestart") {
+            destroySession();
+            $data = [
+                "header" => "Game 21",
+                "message" => "Choose one or two dices for the game!",
+            ];
+            $body = renderView("layout/dicestart.php", $data);
+            sendResponse($body);
+            return;
+        } else if ($method === "GET" && $path === "/dice/destroy") {
+            destroySession();
+            redirectTo(url("/dice"));
+            return;
+        } else if ($method === "POST" && $path === "/dice") {
+            $game = new Game();
+            $game->startGame();
+            return;
+        } else if ($method === "POST" && $path === "/restart") {
+            $game = new Game();
+            $game->restart();
+            $game->startGame();
+            return;
         }
-
         $data = [
             "header" => "404",
             "message" => "The page you are requesting is not here. You may also checkout the HTTP response code, it should be 404.",

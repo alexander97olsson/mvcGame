@@ -1,0 +1,4 @@
+C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Dice\Game.php:43	The method startGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Router\Router.php:23	The method dispatch() has a Cyclomatic Complexity of 21. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\functions.php:67	Missing class import via use statement (line '67', column '23').
+C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\functions.php:73	Missing class import via use statement (line '73', column '21').
