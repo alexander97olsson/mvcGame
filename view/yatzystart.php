@@ -7,6 +7,7 @@
 declare(strict_types=1);
 
 use function Mos\Functions\url;
+
 $restartUrl = url("/yatzyGame/destroy");
 $action = $action ?? null;
 

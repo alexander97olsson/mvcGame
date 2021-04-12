@@ -26,7 +26,7 @@ class Form
             "action" => url("/form/process"),
             "output" => $_SESSION["output"] ?? null,
         ];
-        
+
         $body = renderView("layout/form.php", $data);
 
         $psr17Factory = new Psr17Factory();

@@ -7,7 +7,6 @@ namespace Mos\Controller;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
-
 use alos17\Dice\DiceHand;
 use alos17\Yatzy\Yatzy;
 
@@ -22,14 +21,9 @@ use function Mos\Functions\{
  */
 class YatzyGame
 {
-    public function __construct()
-    {
-
-    }
-
     public function showStartGame(): ResponseInterface
     {
-        destroySession();    
+        destroySession();
         $psr17Factory = new Psr17Factory();
         $data = [
             "header" => "Yatzy game",
@@ -37,12 +31,12 @@ class YatzyGame
             "message" => "This is the game Yatzy!",
         ];
         $body = renderView("layout/yatzystart.php", $data);
-        
+
         return $psr17Factory
         ->createResponse(200)
         ->withBody($psr17Factory->createStream($body));
     }
-    
+
     public function showGame(): ResponseInterface
     {
         if (!isset($_SESSION["yatzyGame"])) {

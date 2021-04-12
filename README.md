@@ -1,3 +1,3 @@
 # Game
 
-Detta är min readme fil för spelet 21an. Det går ut på att kasta tärningar och kommer så nära 21 som möjligt eller på 21. Man spelar mot datorn.
+Detta är min readme fil för alla spel. Jag kommer spara alla olika spel och de kommer gå att nå via navbaren. Just nu finns game 21 och yatzy men kommer att uppdateras med tiden.

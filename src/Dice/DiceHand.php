@@ -24,13 +24,13 @@ class DiceHand
             $this->dices[$i]->toss();
         }
     }
-    
+
     public function tossSpecific(int $dicesChosen)
     {
         $numberOfDices = count($this->dices);
         $this->dices[$dicesChosen]->toss();
     }
-    
+
     public function getAllDices()
     {
         $numberOfDices = count($this->dices);
@@ -57,7 +57,7 @@ class DiceHand
     public function setAllDices($val)
     {
         $numberOfDices = count($this->dices);
-        for ($i=0; $i < $numberOfDices; $i++) { 
+        for ($i = 0; $i < $numberOfDices; $i++) {
             $this->dices[$i]->setLastToss($val[$i]);
         }
     }

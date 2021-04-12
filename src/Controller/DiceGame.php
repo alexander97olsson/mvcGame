@@ -7,7 +7,6 @@ namespace Mos\Controller;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
-
 use alos17\Dice\DiceHand;
 
 use function Mos\Functions\{

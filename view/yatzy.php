@@ -39,7 +39,7 @@ $text = $text ?? null;
             <input name="Toss" type="submit" value="Toss">
         </form>
     <?php endif; ?>
-<?php else: ?>
+<?php else : ?>
     <p>Game is over!</p>
     <p><?= "Total score: " . $_SESSION["score"] ?></p>
 <?php endif; ?>
