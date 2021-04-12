@@ -29,8 +29,8 @@ class YatzyGame
 
     public function showStartGame(): ResponseInterface
     {
+        destroySession();    
         $psr17Factory = new Psr17Factory();
-        destroySession();
         $data = [
             "header" => "Yatzy game",
             "action" => url("/yatzyGame/showGame"),
