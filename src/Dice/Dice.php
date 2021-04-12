@@ -24,4 +24,9 @@ class Dice
     {
         return $this->lastToss;
     }
+
+    public function setLastToss(int $last)
+    {
+        return $this->lastToss = $last;
+    }
 }

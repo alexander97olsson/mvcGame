@@ -8,8 +8,8 @@ declare(strict_types=1);
 
 use function Mos\Functions\url;
 
-$urlDice = url("/dice");
-$urlRestart = url("/restart");
+$urlDice = url("/diceGame/gameStart");
+$urlRestart = url("/diceGame/restart");
 
 $header = $header ?? null;
 $message = $message ?? null;
