@@ -56,7 +56,6 @@ class Yatzy
 
     public function getAllScores(int $number)
     {
-        $diceObject = unserialize($_SESSION["yatzyObjekt"]);
         $amount = 0;
         $numberArray = $_SESSION["numberOfValues"];
         $countArray = count($numberArray);

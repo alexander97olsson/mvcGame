@@ -23,7 +23,7 @@ class YatzyTest extends TestCase
     public function testYatzyTestScore()
     {
         $controller = new Yatzy();
-        $res = $controller->showGame();
+        $controller->showGame();
         $_SESSION["counter"] = 3;
         $_SESSION["round"] = 7;
         $_SESSION["score"] = 65;
@@ -37,7 +37,7 @@ class YatzyTest extends TestCase
         $controller = new Yatzy();
         $_POST["Toss"] = "Toss";
         $_POST["dicesArray"] = [1, 2, 3];
-        $res = $controller->showGame();
+        $controller->showGame();
         $_SESSION["counter"] = 3;
         $_SESSION["round"] = 7;
         $_SESSION["score"] = 65;
@@ -51,7 +51,7 @@ class YatzyTest extends TestCase
         $controller = new Yatzy();
         $_POST["Toss"] = "Toss";
         $_SESSION["numberOfValues"] = [3, 4, 2, 2, 1];
-        $res = $controller->showGame();
+        $controller->showGame();
         $_SESSION["counter"] = 3;
         $_SESSION["round"] = 7;
         $_SESSION["score"] = 65;

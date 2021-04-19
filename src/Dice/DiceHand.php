@@ -27,7 +27,6 @@ class DiceHand
 
     public function tossSpecific(int $dicesChosen)
     {
-        $numberOfDices = count($this->dices);
         $this->dices[$dicesChosen]->toss();
     }
 

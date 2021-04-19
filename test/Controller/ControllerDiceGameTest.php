@@ -28,7 +28,7 @@ class ControllerDiceGameTest extends TestCase
         $exp = "\Psr\Http\Message\ResponseInterface";
         $_POST["dices"] = 2;
         $res = $controller->restart();
-        $this->assertInstanceOf("\Mos\Controller\DiceGame", $controller);
+        $this->assertInstanceOf($exp, $res);
     }
 
     public function testStartGame()
@@ -37,7 +37,7 @@ class ControllerDiceGameTest extends TestCase
         $exp = "\Psr\Http\Message\ResponseInterface";
         $_POST["dices"] = 2;
         $res = $controller->gameStart();
-        $this->assertInstanceOf("\Mos\Controller\DiceGame", $controller);
+        $this->assertInstanceOf($exp, $res);
     }
 
     public function testStopGame()
@@ -47,7 +47,8 @@ class ControllerDiceGameTest extends TestCase
         $_POST["dices"] = 2;
         $_POST["stop"] = "Stop";
         $res = $controller->gameStart();
-        $this->assertInstanceOf("\Mos\Controller\DiceGame", $controller);
+        $this->assertIsInt($_SESSION["computerSum"]);
+        $this->assertInstanceOf($exp, $res);
     }
 
     public function testRestartWithStop()
@@ -57,6 +58,6 @@ class ControllerDiceGameTest extends TestCase
         $_POST["dices"] = 2;
         $res = $controller->restart();
         $this->assertIsInt($_SESSION["computerSum"]);
-        $this->assertInstanceOf("\Mos\Controller\DiceGame", $controller);
+        $this->assertInstanceOf($exp, $res);
     }
 }

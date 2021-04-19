@@ -55,7 +55,7 @@ class DiceHandTest extends TestCase
 
         $diceArraySize = count($diceArrayValue);
         $total = 0;
-        for ($i=0; $i < $diceArraySize; $i++) { 
+        for ($i = 0; $i < $diceArraySize; $i++) {
             $total = $total + $diceArrayValue[$i];
         }
         $this->assertEquals($total, $sum);
@@ -64,15 +64,13 @@ class DiceHandTest extends TestCase
     public function testDiceHandSetAll()
     {
         $tempValues = [1, 4, 5];
-        $tempValuesTotal = 10;
         $dicehand = new DiceHand(3);
         $dicehand->tossAll();
         $dicehand->setAllDices($tempValues);
         $diceArrayValue = $dicehand->getAllDices();
 
-        for ($i=0; $i < 3; $i++) { 
+        for ($i = 0; $i < 3; $i++) {
             $this->assertEquals($tempValues[$i], $diceArrayValue[$i]);
         }
     }
-
 }

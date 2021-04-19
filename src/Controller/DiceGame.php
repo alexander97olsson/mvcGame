@@ -55,7 +55,7 @@ class DiceGame
 
             $diceGame->tossAll();
 
-            $numberArray = $diceGame->getAllDices();
+            $diceGame->getAllDices();
             $graphicsArray = $diceGame->getAllDicesGraphic();
             $totalSum = $diceGame->getSumHand();
 
@@ -70,7 +70,7 @@ class DiceGame
                 $diceGame = new DiceHand($_SESSION["amount"]);
 
                 $diceGame->tossAll();
-                $numberArray = $diceGame->getAllDices();
+                $diceGame->getAllDices();
                 $totalSum = $diceGame->getSumHand();
 
                 $_SESSION["computerSum"] = $totalSum + ($_SESSION["computerSum"] ?? 0);
@@ -104,7 +104,7 @@ class DiceGame
 
             $diceGame->tossAll();
 
-            $numberArray = $diceGame->getAllDices();
+            $diceGame->getAllDices();
             $graphicsArray = $diceGame->getAllDicesGraphic();
             $totalSum = $diceGame->getSumHand();
 
@@ -119,7 +119,7 @@ class DiceGame
                 $diceGame = new DiceHand($_SESSION["amount"]);
 
                 $diceGame->tossAll();
-                $numberArray = $diceGame->getAllDices();
+                $diceGame->getAllDices();
                 $totalSum = $diceGame->getSumHand();
 
                 $_SESSION["computerSum"] = $totalSum + ($_SESSION["computerSum"] ?? 0);
