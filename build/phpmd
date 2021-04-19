@@ -1,8 +1,0 @@
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Controller\DiceGame.php:67	The method gameStart uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Controller\DiceGame.php:116	The method restart uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Dice\DiceHand.php:30	Avoid unused local variables such as '$numberOfDices'.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:30	The method showGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:34	The method showGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:59	Avoid unused local variables such as '$diceObject'.
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\functions.php:67	Missing class import via use statement (line '67', column '23').
-C:\cygwin64\home\alexa\dbwebb-kurser\mvc\me\game\src\functions.php:73	Missing class import via use statement (line '73', column '21').
